@@ -1,7 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Variables for color */
+:root {
+    --primary: #7b4b2d;
+    --light: #ffffff;
+    --dark: #363029;
+    --muted: #f8f6f5;
+}
 /* CSS reset*/
 * {
     margin: 0;
@@ -18,22 +24,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*************** colors ******************/
-.bg-primary {background-color: #7b4b2d;}
+.bg-primary {background-color: var(--primary);}
 
-.bg-light {background-color: #ffffff;}
+.bg-light {background-color: var(--light);}
 
-.bg-dark {background-color: #363029;}
+.bg-dark {background-color: var(--dark);}
 
-.bg-muted {background-color: #f8f6f5;}
+.bg-muted {background-color: var(--muted);}
 
 
-.text-primary {color: #7b4b2d;}
+.text-primary {color: var(--primary);}
 
-.text-light {color: #ffffff;}
+.text-light {color: var(--light);}
 
-.text-dark {color: #363029;}
+.text-dark {color: var(--dark);}
 
-.text-muted {color: #f8f6f5;}
+.text-muted {color: var(--muted);}
 
 /*************** SWATCHES ******************/
 .swatches {
