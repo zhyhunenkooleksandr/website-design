@@ -7,6 +7,15 @@
     --light: #ffffff;
     --dark: #363029;
     --muted: #f8f6f5;
+
+    --font-normal: Roboto, Arial, sans-serif;
+    --font-heading: "Noto Serif", serif;
+
+    --space-0: 0; /* 0px */
+    --space-1: 0.5rem; /* 8px */
+    --space-2: 1rem; /* 16px */
+    --space-3: 2rem; /* 32 */
+
 }
 /* CSS reset*/
 * {
@@ -14,12 +23,12 @@
     padding: 0;
 }
 body {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: var(--font-normal);
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Serif", serif;
+    font-family: var(--font-heading);
     margin-bottom: 0.5rem;
 }
 
@@ -40,13 +49,29 @@ h1, h2, h3, h4, h5, h6 {
 .text-dark {color: var(--dark);}
 
 .text-muted {color: var(--muted);}
+/*************** SPacing ******************/
+.m-0 { margin: var(--space-0);}
+.m-1 { margin: var(--space-1);}
+.m-2 { margin: var(--space-2);}
+.m-3 { margin: var(--space-3);}
+
+.p-0 { padding: var(--space-0);}
+.p-1 { padding: var(--space-1);}
+.p-2 { padding: var(--space-2);}
+.p-3 { padding: var(--space-3);}
+
+.gap-0 { gap: var(--space-0);}
+.gap-1 { gap: var(--space-1);}
+.gap-2 { gap: var(--space-2);}
+.gap-3 { gap: var(--space-3);}
 
 /*************** SWATCHES ******************/
+
 .swatches {
 
 display: flex;
-gap: 1rem;
 }
+/* how to make a cube */
 .swatch .swatch-value {
     aspect-ratio: 1/1;
     width: 4rem;
