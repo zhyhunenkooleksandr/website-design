@@ -31,7 +31,28 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
 }
+/*************** Buttons ******************/
+.btn{
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+}
 
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.link {
+    color: var(--primary);
+    text-decoration: underline;
+}
 /*************** colors ******************/
 .bg-primary {background-color: var(--primary);}
 
