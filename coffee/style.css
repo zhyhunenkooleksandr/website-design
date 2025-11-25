@@ -100,6 +100,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-muted {color: var(--muted);}
 
+.shadow-dark { box-shadow: var(--shadow-dark);}
+.shadow-light { box-shadow: var(--shadow-light);}
+
 /*************** Components ******************/
 .product-image {
     position: relative;
@@ -111,6 +114,8 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     border: 4px solid var(--light);
     border-radius: var(--space-1);
+
+    box-shadow: var(--shadow-dark);
 }
 
 .product-image .product-tag {
@@ -126,7 +131,26 @@ h1, h2, h3, h4, h5, h6 {
     left: var(--space-2);
 }
 
+.tags {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+}
+
+.tag .tag-item {
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+}
 /*************** Layout ******************/
+.container {
+    max-width: 1280px;
+    margin: var(--space-1) auto var(--space-0);
+}
+
 .d-flex { display: flex; }
 
 .flex-between { justify-content: space-between; }

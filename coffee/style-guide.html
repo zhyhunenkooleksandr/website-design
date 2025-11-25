@@ -9,11 +9,11 @@
     <title>Coffee Shoppy</title>
 </head>
 <body>
-    <main>
+    <main class="container">
         <h1>Coffee Shoppy</h1>
         <p>Design tokens and reusable styles for website.</p>
 
-        <section id="colors">
+        <section id="colors" class="m-2 p-2 shadow-dark">
             <h2>Color Palette</h2>
 
             <article class="swatches d-flex gap-2">
@@ -41,7 +41,7 @@
             </article>
         </section>
 
-        <section id="typography">
+        <section id="typography" class="m-2 p-2 shadow-dark">
             <h2>Typography</h2>
 
             <h1 class="heading-xl">Heading XL - Coffee Shoppy</h1>
@@ -50,8 +50,7 @@
             <p class="text-muted bg-dark">Muted Text/Suden Text</p>
         </section>
 
-        <!-- Spacing and Sizing-->
-        <section id="spacing">
+        <section id="spacing" class="m-2 p-2 shadow-dark">
             <h2>Spacing And Sizing</h2>
 
             <div class="dg-muted p-0 m-1">.p-0 - No Padding</div>
@@ -60,7 +59,7 @@
             <div class="bg-muted p-3 m-1">.p-3 - Large Padding</div>
         </section>
 
-        <section id="layout">
+        <section id="layout" class="m-2 p-2 shadow-dark">
             <h2>Layout Units</h2>
             
             <div class="d-flex flex-between">
@@ -80,7 +79,7 @@
             </div>
         </section>
 
-        <section id="Buttons">
+        <section id="Buttons" class="m-2 p-2 shadow-dark">
             <h2>Buttons and Links</h2>
             
             <button class="btn btn-primary">Primary Button</button>
@@ -88,13 +87,24 @@
             <a href="#" class="link">Inline Link</a>
         </section>
 
-        <section id="components">
+        <section id="components" class="m-2 p-2 shadow-dark">
             <h2>Components</h2>
 
             <figure class="product-image">
              <img src="Assets/Coffe-cup.jpg" alt="Coffe Cup">
              <figcaption class="product-tag">50% off - 2.50$</figcaption>
             </figure>
+
+            <p>Tag Style</p>
+            <ul class="tags m-1">
+                <li class="tag-item">Tag 1</li>
+                <li class="tag-item">Tag 2</li>
+            </ul>
+
+            <div class="tags m-1">
+                <a href="" class="tag-item">Tag 1</a>
+                <a href="" class="tag-item">Tag 2</a>
+            </div>
         </section>
     </main>
 </body>
