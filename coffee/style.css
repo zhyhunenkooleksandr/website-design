@@ -223,3 +223,36 @@ display: flex;
     overflow: clip;
     text-overflow: ellipsis;
 }
+
+/***************** CONTACT FORM ********************/
+
+.contact-form label {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    appearance: none;
+
+    border-color: var(--dark);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+
+    display: block;
+    width: 100%;
+
+    font-family: var(--font-normal);
+    font-size:  1em;
+
+    padding: var(--space-1);
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form div {
+    margin: var(--space-1) 0;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Form</title>
+</head>
+<body>
+    
+    <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+
+        <div>
+            <label for="input-topic">Topic:</label>
+            <select name="Topic" id="input-topic" required>
+                <option value="" disabled selected>Choose an oppinion</option>
+                <option value="I love homosexuals">I love homosexuals</option>
+                <option value="I am homophobic">I am homophobic</option>
+            </select>
+        </div>
+
+        <div>
+        <!-- Labels can be linked to inputs using ID-->
+        <label for="input-name">Name:</label>
+        <input type="text" name="name" 
+            id="input-name" 
+            placeholder="John Jack"
+            required
+            minlength="4">
+        </div>
+
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email"
+            id="input-email"
+            placeholder="me@example.com"
+            required>
+        </div>
+
+        <div>
+            <label for="input-message">Your message:</label>
+            <textarea name="message" id="input-message" 
+            placeholder="Your message here..."
+            cols="30" rows="10"
+            required
+            minlength="20"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+            
+    </form>
+</body>
+</html>
